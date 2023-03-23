@@ -31,6 +31,15 @@ class BankingSystem(object):
             print("The new pin has been restored, please log in again!")
             pin = recoverpin
 
+    def depositinterest(self,p,r,t):
+        # A = P(e^(rt)) - formula to calculate the compound interest
+        self.p = float(p)
+        self.r = float(r)
+        self.t = float(t)
+        e = math.exp(self.r*self.t)
+        # Calculation
+        a = p*e # future value of your investement
+        return a
                     
 if __name__ == "__main__":
     BankingSystem()
