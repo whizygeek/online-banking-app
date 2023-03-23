@@ -40,7 +40,7 @@ class BankingSystem(object):
         # Calculation
         a = p*e # future value of your investement
         return a
-                    
+
 if __name__ == "__main__":
     BankingSystem()
     
