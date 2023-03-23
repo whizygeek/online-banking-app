@@ -38,7 +38,7 @@ class BankingSystem(object):
         self.t = float(t)
         e = math.exp(self.r*self.t)
         # Calculation
-        a = p*e # future value of your investement
+        a = self.p*e # future value of your investement
         return a
 
 if __name__ == "__main__":
