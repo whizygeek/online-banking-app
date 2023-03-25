@@ -1,12 +1,12 @@
 import math
 
 class BankingSystem(object):
-    def init(self):
+
+    def __init__(self, name, pin):
         print("Welcome to the online banking application!!")
-        global name # username
-        global pin # password - in banking system it is mainly pin
-        global cb # current balance
-        
+        self.name = name # username
+        self.pin = pin # password - in banking system it is mainly pin
+
     def signin(self):
         self.name = str(input("Please create your username"))
         self.pin = str(input("Please create your 6 digit pin"))
